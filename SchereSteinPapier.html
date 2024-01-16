@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schere Stein Papier</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <header>
+        <h1>Schere Stein Papier</h1>
+      </header>
+      <main>
+        <div class="row">
+          <div>Spieler - <span id="player_points">0</span></div>
+          <div><span>VS</span></div>
+          <div><span id="cpu_points">0</span> - Bot</div>
+        </div>
+        <div class="row">
+          <img src="none.png" id="player_img" alt="" />
+          <img src="none.png" id="cpu_img" alt="" />
+        </div>
+        <div class="row">
+          <div class="pick">
+            <img src="schere.png" alt="schere" />
+            <img src="stein.png" alt="stein" />
+            <img src="papier.png" alt="papier" />
+          </div>
+        </div>
+      </main>
+      <footer>
+        <span id="span_msg"></span>
+      </footer>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
